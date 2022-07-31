@@ -6,7 +6,7 @@ function App() {
   const [query, setQuery] = useState('');
 
   const [currentPage, setcurrentPage] = useState(1);
-  const [itemsPerPage, setitemsPerPage] = useState(5);
+  const [itemsPerPage] = useState(5);
 
   const [pageNumberLimit] = useState(5);
   const [maxPageNumberLimit, setmaxPageNumberLimit] = useState(5);
@@ -99,10 +99,6 @@ function App() {
   if (minPageNumberLimit >= 1) {
     pageDecrementBtn = <li onClick={handlePrevbtn}> &hellip; </li>;
   }
-
-  const handleLoadMore = () => {
-    setitemsPerPage(itemsPerPage + 5);
-  };
 
   return (
     <div className='App'>
