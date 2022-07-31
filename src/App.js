@@ -37,19 +37,16 @@ function App() {
                     </ul>
                   </div>
                 </div>
-                <button  className='btn'>x</button>
+                <button className='btn'>x</button>
               </li>
             );
           })}
       </ul>
     );
   };
+
   const pages = [];
-  for (
-    let i = 1;
-    i <= Math.ceil(Characters.data?.count / itemsPerPage);
-    i++
-  ) {
+  for (let i = 1; i <= Math.ceil(Characters.data?.count / itemsPerPage); i++) {
     pages.push(i);
   }
 
