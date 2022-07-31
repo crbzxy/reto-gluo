@@ -51,7 +51,6 @@ function App() {
   }
 
   const indexOfLastItem = currentPage * itemsPerPage;
-
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = Characters.data?.results.slice(
     indexOfFirstItem,
